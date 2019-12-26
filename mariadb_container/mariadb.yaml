@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress-mariadb
+spec:
+  ports:
+    - port: 3306
+      nodePort: 30005
+  selector:
+    app: mariadb
+  type: NodePort
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mariadb-pv-volume
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/tmp/data"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mariadb-pv-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: mariadb-rc
+spec:
+  replicas: 1
+  selector: 
+    app: mariadb
+  template:
+    metadata:
+      name: mariadb-rc
+      labels:
+        app: mariadb
+    spec:
+      volumes:
+      - name: mariadb-pv-storage
+        persistentVolumeClaim:
+          claimName: mariadb-pv-claim
+      containers:
+      - name: mariadb
+        image: mariadb:latest
+        env:
+        - name: MYSQL_DATABASE
+          value: wp-kube-db
+        - name: MYSQL_USER
+          value: wp-kube-usr
+        - name: MYSQL_PASSWORD
+          value: q1w2e3r4t5
+        - name: MYSQL_ROOT_PASSWORD
+          value: root-pass
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - mountPath: "/var/lib/mysql"
+          name: mariadb-pv-storage
