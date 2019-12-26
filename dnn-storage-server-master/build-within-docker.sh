@@ -1,1 +1,0 @@
-go get -v ./...;go build -v -ldflags "-linkmode external -extldflags -static -X main.Build=`date +%FT%T%z`" -a -installsuffix cgo -o dnn-storage-server .
