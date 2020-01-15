@@ -37,6 +37,8 @@ Edit hosts.ini in
 
 Edit /extraVars.yml
 
+## Regular Meeting note
+https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E/edit#
 
 ## Helm deployment 
 helm_enabled: true
