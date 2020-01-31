@@ -1,13 +1,14 @@
-# ITRIX-Edge
-Software Define Edge
-Please check there for the latest release/version.
+ITRIX-Edge: Software Define Edge
+================================
 
-ITRIX-Edge leverages containers and kubernetes  to edge software can easily connect to Major Cloud Providers
-The main focus of this project is to make deployment esay and  maintanence almost free.   
-With the build in connection to Cloud Provider.  User can easily connnect the edge to Cloud
+**This project page needs reconstruction. Please check here for the latest release/version.**
+
+ITRIX-Edge leverages containers and kubernetes to edge software can easily connect to major cloud providers.
+The main focus of this project is to make deployment and maintanence easily.
+With the build in connection to cloud provider, users can easily connnect the edge to cloud.
 
 
-Spec
+# Spec
 Package	version
 Kubernetes	v1.12.3
 Docker	v18.06.1-ce
@@ -16,23 +17,25 @@ prometheus
 Grafana
  
  
-Deploy Node Requirement
+# Deploy Node Requirement
 Python3
 pip3
 
-Master/Minion Node Requirement
+# Master/Minion Node Requirement
 Package	version
 Supported Os	Ubuntu 18.04 LTS Server
 
 
-Usage
+## Usage
   
 
  
-Install requirement.
+## Install requirement
 
+```=shell
 cd 
 sudo pip3 install -r requirements.txt
+```
 Edit hosts.ini in 
 
 Edit /extraVars.yml
@@ -40,7 +43,8 @@ Edit /extraVars.yml
 ## Regular Meeting note
 https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E/edit#
 
-## Helm deployment 
+## Helm deployment
+```=config 
 helm_enabled: true
 
  
@@ -51,17 +55,21 @@ helm_enabled: true
 
 ## Change default NodePort range 
 # kube_apiserver_node_port_range: "9000-32767"
-Deploy
+```
 
+## Deploy
+```=shell
 su -
 ./ 
 CLI
  Installer
-Usage:  
+```
+
+## Usage  
     
 
-Examples:
-    . 
+## Examples
 
-Options:
+
+## Options
    
