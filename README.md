@@ -8,68 +8,26 @@ The main focus of this project is to make deployment and maintanence easily.
 With the build in connection to cloud provider, users can easily connnect the edge to cloud.
 
 
-# Spec
-Package	version
-Kubernetes	v1.12.3
-Docker	v18.06.1-ce
-Azure Arc
-prometheus
-Grafana
- 
- 
-# Deploy Node Requirement
-Python3
-pip3
+# Overview
 
-# Master/Minion Node Requirement
-Package	version
-Supported Os	Ubuntu 18.04 LTS Server
+Currently, this project covered two parts, one for physical hardware and other one for software stack. The hardware part includes compute node power control, hardware reset and hardware status report. The software stack is based on container technique, and use kubernetes as container orchestration backend. System services and user applications will run on top of kubernetes, provide appliance management tasks and cloud integration works.
 
+For more information, please check our [repo doc/Overview.md](Overview document).
 
-## Usage
-  
+# Contributing
 
- 
-## Install requirement
+Please see [repo CONTRIBUTING.md](CONTRIBUTING.md) to know how to contributing.
 
-```=shell
-cd 
-sudo pip3 install -r requirements.txt
-```
-Edit hosts.ini in 
+If you are associated hardware vendor, please consider help us to check our project compatibility. Once the software compatibility is verified, we'll put your hardware into our compatibility list.
+Provide reference hardware to us for testing purpose, are always welcome.
 
-Edit /extraVars.yml
+# Community
+
+We are open to our project meetings to the public, everyone that interesting in this project can join us via Zoom.
+
+## Scheduled Regular Meeting
+- Every other Wednesday, 2:00 PM GMT+8
+- Zoom ID: [https://zoom.us/j/968338453](968338453) (Password: f4e6eb867f)
 
 ## Regular Meeting note
-https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E/edit#
-
-## Helm deployment
-```=config 
-helm_enabled: true
-
- 
-## Enable basic auth
-# kube_basic_auth: true
-## User defined api password
-# kube_api_pwd: xk8suser
-
-## Change default NodePort range 
-# kube_apiserver_node_port_range: "9000-32767"
-```
-
-## Deploy
-```=shell
-su -
-./ 
-CLI
- Installer
-```
-
-## Usage  
-    
-
-## Examples
-
-
-## Options
-   
+- https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E
