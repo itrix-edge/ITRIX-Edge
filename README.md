@@ -12,11 +12,11 @@ With the build in connection to cloud provider, users can easily connnect the ed
 
 Currently, this project covered two parts, one for physical hardware and other one for software stack. The hardware part includes compute node power control, hardware reset and hardware status report. The software stack is based on container technique, and use kubernetes as container orchestration backend. System services and user applications will run on top of kubernetes, provide appliance management tasks and cloud integration works.
 
-For more information, please check our [repo doc/Overview.md](Overview document).
+For more information, please check our [Overview document](doc/Overview.md).
 
 # Contributing
 
-Please see [repo CONTRIBUTING.md](CONTRIBUTING.md) to know how to contributing.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) to know how to contributing.
 
 If you are associated hardware vendor, please consider help us to check our project compatibility. Once the software compatibility is verified, we'll put your hardware into our compatibility list.
 Provide reference hardware to us for testing purpose, are always welcome.
@@ -27,7 +27,7 @@ We are open to our project meetings to the public, everyone that interesting in 
 
 ## Scheduled Regular Meeting
 - Every other Wednesday, 2:00 PM GMT+8
-- Zoom ID: [https://zoom.us/j/968338453](968338453) (Password: f4e6eb867f)
+- Zoom ID: [968338453](https://zoom.us/j/968338453) (Password: f4e6eb867f)
 
 ## Regular Meeting note
-- https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E
+- [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
