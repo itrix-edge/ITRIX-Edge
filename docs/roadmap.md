@@ -1,4 +1,4 @@
-ITRIX-Edge's roadmap
+ITRIX-Edge's Roadmap
 ====================
 
 # Plan Features
