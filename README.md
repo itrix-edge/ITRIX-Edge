@@ -26,8 +26,8 @@ Provide reference hardware to us for testing purpose, are always welcome.
 We are open to our project meetings to the public, everyone that interesting in this project can join us via Zoom.
 
 ## Scheduled Regular Meeting
-- Every other Wednesday, 2:00 PM GMT+8
-- Zoom ID: [968338453](https://zoom.us/j/968338453) (Password: f4e6eb867f)
+- Every other Wednesday, 2:15 PM GMT+8
+- Zoom ID: [859550077](https://zoom.us/j/859550077) (Password: icl2020)
 
 ## Regular Meeting note
 - [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
