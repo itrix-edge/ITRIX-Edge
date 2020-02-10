@@ -3,7 +3,7 @@ Overview of Edge Appliance
 
 [TOC]
 
-**Note:** This document explain high level project overview, technical detail and implementation topics please refer `Specification.md`.
+**Note:** This document explain high level project overview, technical detail and implementation topics please refer [specification document](specification.md).
 
 # Our Vision
 

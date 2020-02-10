@@ -1,3 +1,4 @@
+![img](docs/images/ITRIX-Edge-logo-small.png) 
 ITRIX-Edge: Software Define Edge
 ================================
 
@@ -12,7 +13,7 @@ With the build in connection to cloud provider, users can easily connnect the ed
 
 Currently, this project covered two parts, one for physical hardware and other one for software stack. The hardware part includes compute node power control, hardware reset and hardware status report. The software stack is based on container technique, and use kubernetes as container orchestration backend. System services and user applications will run on top of kubernetes, provide appliance management tasks and cloud integration works.
 
-For more information, please check our [Overview document](doc/Overview.md).
+For more information, please check our [overview document](docs/overview.md).
 
 # Contributing
 
