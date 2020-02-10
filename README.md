@@ -2,7 +2,7 @@
 ITRIX-Edge: Software Define Edge
 ================================
 
-**This project page needs reconstruction. Please check here for the latest release/version.**
+**[中文簡介](README_TW.md)**
 
 ITRIX-Edge leverages containers and kubernetes to edge software can easily connect to major cloud providers.
 The main focus of this project is to make deployment and maintanence easily.

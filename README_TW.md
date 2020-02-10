@@ -1,7 +1,8 @@
-工業技術研究院邊緣運算:軟體定義
+![img](docs/images/ITRIX-Edge-logo-small.png) 
+ITRIX-Edge: 軟體定義邊緣
 ================================
 
-工業技術研究院(Industrial Technology Research Institute; ITRI)研發之邊緣運算應用kubernetes(K8S)和容器可使其簡易的連接到主要雲端供應商。
+ITRIX-Edge旨為透過容器化與kubernetes(K8S)經驗，使得其上的邊緣運算可簡易的連接到各大主要雲端供應商。
 此項目的主要重點是優化部署和維護，通過雲端供應商的內部連結，讓一般用戶可以輕鬆的將邊緣運算連接到雲端。
 
 # 總覽
@@ -22,8 +23,8 @@
 我們對外透明化項目排程的會議，只要對此項目有興趣的可以通過Zoom軟體加入會議一起討論。
 
 ## 定期會議
-- •	•	每隔週三 下午14:15~15:15(台灣時間Taiwan Standard Time; TST)
+- 每隔週三 下午14:15~15:15(台灣時間Taiwan Standard Time; TST)
 - Zoom ID: [968338453](https://zoom.us/j/968338453) (密碼: f4e6eb867f)
 
 ## 定期會議紀錄
-- •	請參考 [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
+- 請參考 [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
