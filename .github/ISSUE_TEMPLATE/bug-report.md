@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report a bug encountered while operating KubeEdge
+about: Report a bug encountered while operating ITRIX-Edge
 labels: kind/bug
 
 ---
@@ -15,7 +15,7 @@ labels: kind/bug
 **Anything else we need to know?**:
 
 **Environment**:
-- KubeEdge version(e.g. `cloudcore/edgecore --version`):  
+- ITRIX-Edge version(e.g. `cloudcore/edgecore --version`):  
 
 **CloudSide Environment**:
 - Hardware configuration (e.g. `lscpu`):
