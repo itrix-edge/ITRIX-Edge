@@ -30,4 +30,4 @@ labels: kind/bug
 - OS (e.g. `cat /etc/os-release`):
 - Kernel (e.g. `uname -a`):
 - Go version (e.g. `go version`): 
-- Others:
+- Others: 
