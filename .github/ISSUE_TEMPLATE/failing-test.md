@@ -1,6 +1,6 @@
 ---
 name: Failing Test
-about: Report test failures in KubeEdge CI jobs
+about: Report test failures in ITRIX-Edge jobs
 labels: kind/failing-test
 
 ---
