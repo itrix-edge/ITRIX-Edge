@@ -1,4 +1,4 @@
-![img](docs/images/ITRIX-Edge-logo-small1.png) 
+![img](docs/images/ITRIX-Edge-logo-small1.jpg) 
 ITRIX-Edge: Software Define Edge
 ================================
 
