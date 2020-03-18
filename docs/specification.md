@@ -29,14 +29,18 @@ In this reference hardware design, we choose relay board for traditional electri
 
 # Software Architecture
 
-Easy Configuration
-Idea for Single Appliance & Multiple Appliances Federation use cases
-Easy to integrated with Cloud Service Provider: Microsoft Azure, Google GCP, or Amazon AWS
-Easy Deployment
-Application deployment by Kubernetes ecosystem
-Federation support for multiple appliances applications
-Internal HA & Failover for applications
+![image](images/software-arch.png)
 
+## Application Orchestration
+The sample software uses native kubernetes as orchestration engine, we also use it to manage system-wide services for edge maintenance tasks.
+
+Additional software stack achieved our goal of the edge appliance:
+- Easy Configuration
+- Easy Deployment
+- Federation support for multiple appliances applications
+- Internal HA & Failover for applications
+
+Those features are explained in detail under their sub-projects.
 
 # Deployment
 
