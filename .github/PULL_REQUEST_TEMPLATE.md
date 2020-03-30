@@ -1,6 +1,6 @@
 <!--  Thanks for sending a pull request!  Here are some tips for you:
 
-1. If this is your first time, please read our contributor guidelines: https://github.com/kubeedge/kubeedge/blob/master/CONTRIBUTING.md
+1. If this is your first time, please read our contributor guidelines: https://github.com/itrix-edge/ITRIX-Edge/blob/master/CONTRIBUTING.md
 2. Ensure you have added or ran the appropriate tests for your PR
 
 -->
