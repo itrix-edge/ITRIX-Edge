@@ -1,7 +1,7 @@
 ---
 name: Enhancement Request
 about: Suggest an enhancement to the ITRIX-Edge project
-labels: kind/feature
+labels: kind/enhancement
 
 ---
 <!-- Please only use this template for submitting enhancement requests -->
