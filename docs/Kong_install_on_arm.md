@@ -13,6 +13,7 @@ image: kong-docker-kubernetes-ingress-controller.bintray.io/kong-ingress-control
 ```shell=
 $ kubectl apply -f kong-ingress-dbless
 ```
+![](https://i.imgur.com/IzOCNyA.png)
 
 ### Install by YAML manfifests
 * Git clone Kong helm chart
