@@ -23,7 +23,7 @@ ITRIX-Edge旨為透過容器化與kubernetes(K8S)經驗，使得其上的邊緣�
 我們對外透明化項目排程的會議，只要對此項目有興趣的可以通過Zoom軟體加入會議一起討論。
 
 ## 定期會議
-- 每隔週三 下午14:15~15:15(台灣時間Taiwan Standard Time; TST)
+- 每隔週三 下午14:00~15:00(台灣時間Taiwan Standard Time; TST)
 - Microsoft Teams線上會議: https://teams.microsoft.com/l/meetup-join/19%3ameeting_Nzc1ODAxNjEtMjBiMy00NjY2LTk4NzUtYTE3ZjhlNjZmYzll%40thread.v2/0?context=%7b%22Tid%22%3a%2273ffe322-3a8c-4d1c-936d-665676f559aa%22%2c%22Oid%22%3a%2235847b3d-47f0-4419-9476-427efc9d7281%22%7d
 
 ## 定期會議紀錄
