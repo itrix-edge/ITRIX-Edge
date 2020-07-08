@@ -1,4 +1,4 @@
-![img](docs/images/ITRIX-Edge-logo-small.png) 
+![img](docs/images/ITRIX-Edge-logo-small2.jpg) 
 ITRIX-Edge: 軟體定義邊緣
 ================================
 
