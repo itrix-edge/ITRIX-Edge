@@ -24,7 +24,7 @@ ITRIX-Edge旨為透過容器化與kubernetes(K8S)經驗，使得其上的邊緣�
 
 ## 定期會議
 - 每隔週三 下午14:15~15:15(台灣時間Taiwan Standard Time; TST)
-- Zoom ID: [968338453](https://zoom.us/j/968338453) (密碼: f4e6eb867f)
+- Microsoft Team線上會議: https://teams.microsoft.com/l/meetup-join/19%3ameeting_Nzc1ODAxNjEtMjBiMy00NjY2LTk4NzUtYTE3ZjhlNjZmYzll%40thread.v2/0?context=%7b%22Tid%22%3a%2273ffe322-3a8c-4d1c-936d-665676f559aa%22%2c%22Oid%22%3a%2235847b3d-47f0-4419-9476-427efc9d7281%22%7d
 
 ## 定期會議紀錄
 - 請參考 [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
