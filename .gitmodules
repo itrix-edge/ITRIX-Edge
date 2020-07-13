@@ -1,0 +1,6 @@
+[submodule "edge-client-agent"]
+	path = edge-client-agent
+	url = https://github.com/itrix-edge/edge-client-agent
+[submodule "pre-setup"]
+	path = pre-setup
+	url = https://github.com/itrix-edge/pre-setup
