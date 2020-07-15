@@ -7,3 +7,6 @@
 [submodule "k8s-device-plugin"]
 	path = k8s-device-plugin
 	url = https://github.com/itrix-edge/k8s-device-plugin.git
+[submodule "kubespray"]
+	path = kubespray
+	url = https://github.com/itrix-edge/kubespray.git
