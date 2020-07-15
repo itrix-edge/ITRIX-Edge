@@ -4,3 +4,6 @@
 [submodule "pre-setup"]
 	path = pre-setup
 	url = https://github.com/itrix-edge/pre-setup
+[submodule "k8s-device-plugin"]
+	path = k8s-device-plugin
+	url = https://github.com/itrix-edge/k8s-device-plugin.git
