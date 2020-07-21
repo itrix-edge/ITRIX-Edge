@@ -10,3 +10,6 @@
 [submodule "kubespray"]
 	path = kubespray
 	url = https://github.com/itrix-edge/kubespray.git
+[submodule "metallb"]
+	path = metallb
+	url = https://github.com/itrix-edge/metallb.git
