@@ -28,7 +28,6 @@ We are open to our project meetings to the public, everyone that interesting in 
 
 ## Scheduled Regular Meeting
 - Every other Wednesday, 2:00 PM GMT+8
-- Microsoft Teams meeting: https://teams.microsoft.com/l/meetup-join/19%3ameeting_Nzc1ODAxNjEtMjBiMy00NjY2LTk4NzUtYTE3ZjhlNjZmYzll%40thread.v2/0?context=%7b%22Tid%22%3a%2273ffe322-3a8c-4d1c-936d-665676f559aa%22%2c%22Oid%22%3a%2235847b3d-47f0-4419-9476-427efc9d7281%22%7d 
 
 ## Regular Meeting note
 - [Google doc](https://docs.google.com/document/d/1wQb8q7dXOevTFSIFiWSf9xacT_8qqiqOgxSLDL-Gn3E)
