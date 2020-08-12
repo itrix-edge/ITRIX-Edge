@@ -60,9 +60,10 @@ $ kubectl create secret generic -n metallb-system memberlist --from-literal=secr
 $ docker run -it --name postgresql-local -p 192.168.1.103:5432:5432/tcp -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=postgresdb -d postgres:11.8
 ```
 ### install edge-client-agent
-
-$ vi external-IP.yml
 ```
+$ cd edge-client-agent
+$ vi external-IP.yml
+
 kind: Service
 apiVersion: v1
 metadata:
