@@ -102,7 +102,7 @@ $ git clone https://github.com/fpaupier/tensorflow-serving_sidecar.git
 $ cd tensorflow-serving_sidecar
 ```
 該程式透過Tersorflow-Serving提供服務的API，輸入一張測試圖片image1.jpg，並得到預測結果out_image2.json和out_image2.jpg。
-Label文件 : https://github.com/fpaupier/tensorflow-serving_sidecar/blob/master/data/labels.pbtxt
+Label文件參考https://github.com/fpaupier/tensorflow-serving_sidecar/blob/master/data/labels.pbtxt
 ```
 python3 client.py --server_url "http://<tersorflow_serving_IP>:30005/v1/models/faster_rcnn_resnet:predict" --image_path "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/image1.jpg" --output_json "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/out_image2.json" --save_output_image "TRUE" --label_map "/home/nvidia/tensorflow-serving_sidecar/data/labels.pbtxt"
 ```
