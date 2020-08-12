@@ -38,8 +38,14 @@ ansible-playbook -i /root/ITRIX-Edge/kubespray/inventory/edge/hosts.yaml cluster
 ```
 檢查
 ```
-kubectl get node
+root@node1:~/ITRIX-Edge/metallb/manifests# kubectl get node
+NAME    STATUS   ROLES    AGE   VERSION
+node1   Ready    master   79m   v1.16.6
+node2   Ready    master   78m   v1.16.6
+node3   Ready    master   78m   v1.16.6
+node4   Ready    <none>   76m   v1.16.6
 ```
+
 ### install matallb
 https://github.com/itrix-edge/metallb/tree/v0.9.3-itri
 ```
