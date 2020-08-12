@@ -39,7 +39,7 @@ ansible-playbook -i /root/ITRIX-Edge/kubespray/inventory/edge/hosts.yaml cluster
 檢查
 ```
 kubectl get node
-``
+```
 ### install matallb
 https://github.com/itrix-edge/metallb/tree/v0.9.3-itri
 ```
