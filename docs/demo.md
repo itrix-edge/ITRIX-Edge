@@ -7,18 +7,17 @@ Demo deployment for 研揚
 
 ### download from git
 ```
-sudo su
-cd /root
-git clone https://github.com/itrix-edge/ITRIX-Edge.git
-cd ITRIX-Edge
-
-git checkout v0.1.1
-git submodule update --init
+$ sudo su
+$ cd /root
+$ git clone https://github.com/itrix-edge/ITRIX-Edge.git
+$ cd ITRIX-Edge
+$ git checkout v0.1.1
+$ git submodule update --init
 ```
 ### pre-setup
 ```
-cd /root/ITRIX-Edge/pre-setup
-vi inventory.sample
+$ cd /root/ITRIX-Edge/pre-setup
+$ vi inventory.sample
 
 [CP]
 192.168.1.101
@@ -29,16 +28,16 @@ vi inventory.sample
 [OOBM]
 ```
 ```
-ansible-playbook -i inventory.sample playbook.yml
+$ ansible-playbook -i inventory.sample playbook.yml
 ```
 ### install K8S by kubespray
 ```
-cd /root/ITRIX-Edge/kubespray
-ansible-playbook -i /root/ITRIX-Edge/kubespray/inventory/edge/hosts.yaml cluster.yml
+$ cd /root/ITRIX-Edge/kubespray
+$ ansible-playbook -i /root/ITRIX-Edge/kubespray/inventory/edge/hosts.yaml cluster.yml
 ```
 檢查
 ```
-root@node1:~/ITRIX-Edge/metallb/manifests# kubectl get node
+$ kubectl get node
 NAME    STATUS   ROLES    AGE   VERSION
 node1   Ready    master   79m   v1.16.6
 node2   Ready    master   78m   v1.16.6
@@ -49,12 +48,12 @@ node4   Ready    <none>   76m   v1.16.6
 ### install matallb
 https://github.com/itrix-edge/metallb/tree/v0.9.3-itri
 ```
-cd /root/ITRIX-Edge/metallb/manifests
+$ cd /root/ITRIX-Edge/metallb/manifests
 
-kubectl apply -f namespace.yaml
-kubectl apply -f current-config.yaml
-kubectl apply -f metallb.yaml
-kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
+$ kubectl apply -f namespace.yaml
+$ kubectl apply -f current-config.yaml
+$ kubectl apply -f metallb.yaml
+$ kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
 ```
 ### install posgress
 ```
@@ -62,7 +61,7 @@ $ docker run -it --name postgresql-local -p 192.168.1.103:5432:5432/tcp -e POSTG
 ```
 ### install edge-client-agent
 
-vi external-IP.yml
+$ vi external-IP.yml
 ```
 kind: Service
 apiVersion: v1
@@ -85,13 +84,13 @@ subsets:
       - port: 5432
 ```
 ```
-kubectl apply -f external-IP.yml
-kubectl apply -f edge-agent-all.yaml
+$ kubectl apply -f external-IP.yml
+$ kubectl apply -f edge-agent-all.yaml
 ```
 ```
-curl http://<10.233.62.205>:9000/v1/migrate/hook
+$ curl http://<10.233.62.205>:9000/v1/migrate/hook
 {"result":true}
 root@node1:~/ITRIX-Edge/edge-client-agent#
-curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
+$ curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
 {"result":true}
 ```
