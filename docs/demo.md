@@ -91,7 +91,7 @@ $ kubectl apply -f edge-agent-all.yaml
 ```
 $ curl http://<10.233.62.205>:9000/v1/migrate/hook
 {"result":true}
-root@node1:~/ITRIX-Edge/edge-client-agent#
+
 $ curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
 {"result":true}
 ```
