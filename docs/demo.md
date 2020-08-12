@@ -114,10 +114,10 @@ $ pip3 install --upgrade setuptools
 $ pip3 install --upgrade pip
 $ pip3 install numpy
 $ pip3 install matplotlib
+$ sudo apt install protobuf-compiler
+用protoc your/path/to/object_detection/protos/string_int_label_map.proto --python_out=.命令生成string_int_label_map_pb2.py文件。
 ```
 <補充>如果遇到tensorflow無法在jetson nano安裝
 ```
 $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow==1.15.2+nv20.2
-$ sudo apt install protobuf-compiler
-用protoc your/path/to/object_detection/protos/string_int_label_map.proto --python_out=.命令生成string_int_label_map_pb2.py文件。
 ```
