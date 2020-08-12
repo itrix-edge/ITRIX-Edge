@@ -5,7 +5,7 @@ Demo deployment for 研揚
 
 2. sudo apt-get install ansible
 
-### download
+### download from git
 ```
 sudo su
 cd /root
@@ -56,7 +56,7 @@ kubectl apply -f current-config.yaml
 kubectl apply -f metallb.yaml
 kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
 ```
-###  posgress
+### install posgress
 ```
 $ docker run -it --name postgresql-local -p 192.168.1.103:5432:5432/tcp -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=postgresdb -d postgres:11.8
 ```
