@@ -1,4 +1,4 @@
-
+Demo deployment for 研揚
 ------------
 ### prework
 1. ssh key
@@ -89,10 +89,3 @@ root@node1:~/ITRIX-Edge/edge-client-agent#
 curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
 {"result":true}
 ```
----------------
-
-
-----------------
-
-
------------------
