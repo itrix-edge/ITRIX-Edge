@@ -1,5 +1,5 @@
-## Demo deployment for 研揚
-
+# Demo deployment for 研揚
+## itri-edge platform deployment
 ### prework
 1. ssh key
 
@@ -94,4 +94,26 @@ $ curl http://<10.233.62.205>:9000/v1/migrate/hook
 
 $ curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
 {"result":true}
+```
+## inference demo
+```
+$ git clone https://github.com/fpaupier/tensorflow-serving_sidecar.git
+```
+```
+python3 client.py --server_url "http://10.12.50.6:30005/v1/models/faster_rcnn_resnet:predict" --image_path "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/image1.jpg" --output_json "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/out_image2.json" --save_output_image "TRUE" --label_map "/home/nvidia/tensorflow-serving_sidecar/data/labels.pbtxt"
+```
+<補充>如果遇到執行python3缺少lib
+```
+$ sudo su
+$ apt-get install python3-pip
+$ pip3 install --upgrade setuptools
+$ pip3 install --upgrade pip
+$ pip3 install numpy
+$ pip3 install matplotlib
+```
+<補充>如果遇到tensorflow無法在jetson nano安裝
+```
+$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow==1.15.2+nv20.2
+$ sudo apt install protobuf-compiler
+用protoc your/path/to/object_detection/protos/string_int_label_map.proto --python_out=.命令生成string_int_label_map_pb2.py文件。
 ```
