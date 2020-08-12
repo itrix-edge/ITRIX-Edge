@@ -1,6 +1,6 @@
 
 ------------
-###　前置作業
+### prework
 1. ssh key
 
 2. sudo apt-get install ansible
