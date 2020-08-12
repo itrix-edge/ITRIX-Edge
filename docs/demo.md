@@ -96,10 +96,12 @@ $ curl http://<10.233.62.205>:9000/v1/migrate/deploymentTemplate
 {"result":true}
 ```
 ## inference demo
+下載物件辨識模型範例
 ```
 $ git clone https://github.com/fpaupier/tensorflow-serving_sidecar.git
 $ cd tensorflow-serving_sidecar
 ```
+透過Tersorflow-Serving的API，輸入一張測試圖片，並得到預測結果。
 ```
 python3 client.py --server_url "http://<tersorflow_serving_IP>:30005/v1/models/faster_rcnn_resnet:predict" --image_path "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/image1.jpg" --output_json "/home/nvidia/tensorflow-serving_sidecar/object_detection/test_images/out_image2.json" --save_output_image "TRUE" --label_map "/home/nvidia/tensorflow-serving_sidecar/data/labels.pbtxt"
 ```
