@@ -4,7 +4,7 @@
 
 1. ssh key
 2. `$ sudo apt-get install ansible`
-3. kernal
+3. update kernal
 
 ### download from git
 ```
