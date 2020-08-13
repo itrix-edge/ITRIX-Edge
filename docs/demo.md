@@ -6,6 +6,8 @@
 2. `$ sudo apt-get install ansible`
 3. update kernal
 
+[Building the NVIDIA Kernel](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fkernel_custom.html%23wwpID0E0FD0HA)
+
 ### download from git
 ```
 $ sudo su
