@@ -1,9 +1,10 @@
 # Demo deployment for 研揚
 ## itri-edge platform deployment
 ### prework
-1. ssh key
 
-2. sudo apt-get install ansible
+1. ssh key
+2. `$ sudo apt-get install ansible`
+3. kernal
 
 ### download from git
 ```
