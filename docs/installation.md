@@ -5,9 +5,15 @@ ITRIX-Edge Installation
 
 ### Hardware setup
 
+<<<<<<< HEAD
 To set up a local edge cluster, we need at least 4 compute nodes, and connect all nodes to the same LAN. An external router for internet access and set up each compute node as a static IP address are also required.
 
 The reference cluster configuration described as below, OOBM, and external power control lane hardware are optional. Please follow [specification document](specification.md) for abstract instruction. 
+=======
+To setup an local edge cluster, we needs at least 4 compute nodes, and connect all nodes to the same LAN. You also need to prepare a external router for internet access, and setup each compute node as static IP address.
+
+The reference cluster configuration described as below, OOBM and external power control lane hardware are optional. Please follow [specification document](specification.md) for abstruct instruction. 
+>>>>>>> Add installation document
 
 ![image](images/edge-appliance-access-information.png)
 
@@ -23,6 +29,7 @@ The reference cluster configuration described as below, OOBM, and external power
 > **Note:** All compute node and OOBM has mDNS enabled after ITRIX-edge configurated, use `[hostname].local` for quick access.
 
 ### Compute node requirement
+<<<<<<< HEAD
 Each compute node should at least complete setup describe as following :
 1. Ubuntu OS installation
 2. Graphics driver
@@ -38,13 +45,36 @@ The ansible host used to provide ITRIX-Edge installation.
 4. ssh keyless login between ansible host and all compute nodes 
 
 > If the cluster configuration does not contain a dedicated ansible host node, users can choose one of the compute nodes as ansible host node.
+=======
+Each compute node should at least complete following setup:
+1. Ubuntu OS installation
+2. Graphics driver
+3. Docker container runtime
+3. Wired ethernet connection and static IP addess. Wireless connection is not recommand.
+4. Privileged account across all compute nodes (use `root` directly is ok but not recommended. Use user account which have `sudo` privilege is a good alternative way)
+
+### Ansible host requirement
+The ansible host, is used for provide ITRIX-Edge installation.
+1. Ubuntu OS installation
+2. Wired ethernet connection and static IP addess. Wireless connection is not recommand.
+3. Ansible installed
+4. ssh keyless login between ansible host and all compute nodes 
+
+> If the cluster configuration does not contain an delicated ansible host node, users can choose one of the compute node as ansible host node.
+>>>>>>> Add installation document
 
 
 ### Custom Linux kernel
 
+<<<<<<< HEAD
 For the default L4T platform ubuntu distribution, some additional kernel modules should enable in the cluster installation. Recompile kernel by enabling those modules are required. Used kernel config can be download below.
 
 Please follow the document [Building the NVIDIA Kernel](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fkernel_custom.html%23wwpID0E0FD0HA) for rebuild kernel instructions.
+=======
+For the default L4T platform ubuntu distribution, there are some additional kernel modules should be enable for cluster installation. This requires recompile kernel with its module. Used kernel config can be download below.
+
+Please following document [Building the NVIDIA Kernel](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fkernel_custom.html%23wwpID0E0FD0HA) for rebuild kernel instructions.
+>>>>>>> Add installation document
 
 * [Kernel config for TX2/Xavier to enable docker extensions & Kubernetes](https://gist.github.com/stevennick/71ba2c71bc43ad665e1aab93d6cc6372)
 
@@ -77,7 +107,11 @@ Please follow the document [Building the NVIDIA Kernel](https://docs.nvidia.com/
 	
 	[OOBM]
 	```
+<<<<<<< HEAD
 	After updated the inventory file, execute ansible-playbook to apply cluster prerequisite:
+=======
+	After update the inventory file, execute ansible playbook to apply cluster prerequisite:
+>>>>>>> Add installation document
 	```=shell
 	# On Ansible-host
 	$ ansible-playbook -i inventory playbook.yml
