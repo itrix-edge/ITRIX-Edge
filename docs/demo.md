@@ -340,13 +340,17 @@ curl -X POST -k -v POST http://192.168.1.151:9000/v1/deploymentTemplate -d  '{ "
 
 ### Pipeline操作
 登入kubeflow
+
 ![](https://i.imgur.com/ixmadDe.png)
 
 選用Pipeline
+
 ![](https://i.imgur.com/QCn98be.png)
 
 Create Demo2 Pipeline run
+
 ![](https://i.imgur.com/KCXeyo5.png)
 
 填入url與key
+
 ![](https://i.imgur.com/8UA1dsQ.png)
