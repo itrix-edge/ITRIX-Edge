@@ -56,8 +56,9 @@ Please follow the document [Building the NVIDIA Kernel](https://docs.nvidia.com/
 	 
 	$ git clone https://github.com/itrix-edge/ITRIX-Edge.git
 	$ cd ITRIX-Edge
-	$ git checkout v0.1.1
+	$ git checkout v0.1.2
 	$ git submodule update --init
+	$ mv -r edge kubespray/inventory/
 	```
 
 2. Execute pre-setup for cluster prerequisite
