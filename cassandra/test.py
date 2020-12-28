@@ -51,13 +51,13 @@ print(session.execute("SELECT release_version FROM system.local").one())
 查詢keyspaces/tables/columns狀態
 # -*- encoding: utf-8 -*-
 # 引入Cluster模塊
-from cassandra.cluster import Cluster
+#from cassandra.cluster import Cluster
 # 引入DCAwareRoundRobinPolicy模塊，可用來自定義驅動程序的行為
-from cassandra.policies import DCAwareRoundRobinPolicy
+#from cassandra.policies import DCAwareRoundRobinPolicy
 # 默認本機數據庫集群(IP127.0.0.1).
-cluster = Cluster()
+#cluster = Cluster()
 # 連接並創建一個會話
-session = cluster.connect()
+#session = cluster.connect()
 # 查詢keyspaces/tables/columns狀態
 print(cluster.metadata.keyspaces)
 print(‘----------‘)
