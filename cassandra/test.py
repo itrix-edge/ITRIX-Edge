@@ -76,7 +76,6 @@ print(cluster.is_shutdown)
 
 -----------------------
 
-
 插入和查詢表中的數據
 # -*- encoding: utf-8 -*-
 # 引入Cluster模塊
@@ -94,8 +93,6 @@ session.execute(‘insert into test.user (name, age, email) values (%s, %s, %s);
 session.execute(‘insert into test.user (name, age, email) values (%s, %s, %s);‘, [‘bbb‘, 22, ‘bbb@22.com‘])
 session.execute(‘insert into test.user (name, age, email) values (%s, %s, %s);‘, [‘ddd‘, 20, ‘ccc@20.com‘])
 
-
-
 -------------------------
 # table中查詢數據
 rows = session.execute(‘select * from test.user;‘)
@@ -105,7 +102,6 @@ for row in rows:
 cluster.shutdown()
 # 查看是否關閉連接
 print(cluster.is_shutdown)
-
 
 --------------------------
 連接遠程數據庫
@@ -142,7 +138,6 @@ result.to_csv(‘連接遠程數據庫.csv‘, mode=‘a‘, header=True)
 # 關閉連接
 cluster.shutdown()
 ---------------------------------
-
 
 # -*- coding: utf-8 -*-
 import requests
@@ -219,12 +214,9 @@ def main():
 if __name__ == '__main__':
         main()
 
-
 ------------------------	
 #為了可以持續頻繁接收每3~7秒一次更新的28筆資料，每個insert session包成一個API request。	
 #華城對Alex的server IP丟資料，對Alex的程式來說，把資料轉發到Cassanfra的程式包成一支function。
-
-
 
 from flask import Flask
 from uwsgidecorators import postfork
