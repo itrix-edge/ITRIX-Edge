@@ -4,7 +4,7 @@
 from cassandra.cluster import Cluster
 
 cluster = Cluster()#127.0.0.1
-cluster = Cluster(['10.98.187.203', '192.168.0.2'])
+cluster = Cluster(['10.98.187.203', ''])
 
 
 #創建keyspace
