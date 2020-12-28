@@ -79,14 +79,14 @@ print(cluster.is_shutdown)
 插入和查詢表中的數據
 # -*- encoding: utf-8 -*-
 # 引入Cluster模塊
-from cassandra.cluster import Cluster
+#from cassandra.cluster import Cluster
 # 引入DCAwareRoundRobinPolicy模塊，可用來自定義驅動程序的行為
-from cassandra.policies import DCAwareRoundRobinPolicy
+#from cassandra.policies import DCAwareRoundRobinPolicy
 
 # 默認本機數據庫集群(IP127.0.0.1).
-cluster = Cluster()
+#cluster = Cluster()
 # 連接並創建一個會話
-session = cluster.connect()
+#session = cluster.connect()
 # table中插入數據
 session.execute(‘insert into test.user (name, age, email) values (%s, %s, %s);‘, [‘aaa‘, 21, ‘222@21.com‘])
 session.execute(‘insert into test.user (name, age, email) values (%s, %s, %s);‘, [‘bbb‘, 22, ‘bbb@22.com‘])
