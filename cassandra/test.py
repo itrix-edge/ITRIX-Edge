@@ -6,7 +6,7 @@ from cassandra.cluster import Cluster
 cluster = Cluster()#127.0.0.1
 cluster = Cluster(['10.98.187.203', ''])
 
-
+--------------------------
 #創建keyspace
 session.execute('CREATE KEYSPACE IF NOT EXISTS cycling WITH replication = { 'class' : 'NetworkTopologyStrategy', 'dc1' : '3' };')
 
@@ -14,7 +14,7 @@ session = cluster.connect('cycling')
 
 #session.set_keyspace('users')
 
-
+--------------------------
 # 創建table
 session.execute('CREATE TABLE IF NOT EXISTS cycling.table_1 (
    id int, 
