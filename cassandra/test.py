@@ -83,7 +83,6 @@ from cassandra.cluster import Cluster
 # 引入DCAwareRoundRobinPolicy模塊，可用來自定義驅動程序的行為
 from cassandra.policies import DCAwareRoundRobinPolicy
 
-
 # 默認本機數據庫集群(IP127.0.0.1).
 cluster = Cluster()
 # 連接並創建一個會話
@@ -114,7 +113,6 @@ from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 from cassandra.query import SimpleStatement
 import pandas as pd
-
 
 # 配置Cassandra集群的IP
 contact_points = [‘1.1.1.1‘, ‘2.2.2.2‘, ‘3.3.3.3‘]
