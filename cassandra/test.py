@@ -1,6 +1,4 @@
 
-
-
 # Connecting to Cassandra
 --------------------------
 from cassandra.cluster import Cluster
